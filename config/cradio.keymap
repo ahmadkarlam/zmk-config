@@ -77,7 +77,7 @@
         // │   Z     │   X     │   C     │   V     │   B     │   │   N     │   M     │ , <     │ . >     │ / ?     │
             &kp Z      &kp X     &kp C     &kp V     &kp B        &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
         // ╰─────────┴─────────┴─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┴─────────┴─────────╯
-                                          &lt 2 TAB   &kp LS(BSPC)   &kp SPACE &lt 1 ENTER
+                                          &lt 2 TAB   &kp LS(BSPC)   &kp SPC &lt 1 ENTER
         //                               ╰─────────┴─────────╯   ╰─────────┴─────────╯
             >;
         };
@@ -88,7 +88,7 @@
             bindings = <
         // ╭─────────┬─────────┬─────────┬─────────┬─────────╮   ╭─────────┬─────────┬─────────┬─────────┬─────────╮
         // │   `     │   (     │   {     │   [     │   <     │   │   >     │   ]     │   }     │   )     │   ~     │
-            &kp GRAVE &kp LPAR &kp LCBR  &kp LBKT  &kp LT       &kp GT    &kp RBKT  &kp RCBR  &kp RPAR  &kp TILDE
+            &kp GRAVE &kp LPAR &kp LBRC  &kp LBKT  &kp LT       &kp GT    &kp RBKT  &kp RBRC  &kp RPAR  &kp TILDE
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │   !     │   @     │   #     │   $     │   %     │   │   |     │  GUI    │  CTRL   │  ALT    │  SHIFT  │
             &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT    &kp PIPE  &kp RGUI  &kp RCTRL &kp RALT  &kp RSFT
@@ -96,7 +96,7 @@
         // │   ^     │   &     │   *     │   -     │   =     │   │   _     │   +     │   '     │   "     │   \     │
             &kp CARET &kp AMPS &kp ASTR  &kp MINUS &kp EQUAL    &kp UNDER &kp PLUS  &kp SQT   &kp DQT   &kp BSLH
         // ╰─────────┴─────────┴─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┴─────────┴─────────╯
-                                          &kp LSFT  &kp SPACE      &trans   &trans
+                                          &kp LSFT  &kp SPC      &trans   &trans
         //                               ╰─────────┴─────────╯   ╰─────────┴─────────╯
             >;
         };
@@ -107,7 +107,7 @@
             bindings = <
         // ╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         // │ GUI+TAB │ GUI+SPC  │ GUI+{    │ GUI+}    │ Vol+     │   │ ←        │ ↓        │ ↑        │ →        │ Delete   │
-            &kp LG(TAB)  &kp LG(SPACE) &kp LG(LCBR) &kp LG(RCBR) &kp VOL_UP    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
+            &kp LG(TAB)  &kp LG(SPACE) &kp LG(LBRC) &kp LG(RBRC) &kp VOL_UP    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
         // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         // │ Shift   │ Alt      │ Ctrl     │ GUI      │ Vol-     │   │ Home     │ PgDn     │ PgUp     │ End      │ Enter    │
             &kp LSFT   &kp LALT     &kp LCTRL    &kp LGUI     &kp VOL_DOWN    &kp HOME   &kp PGDN   &kp PGUP   &kp END    &kp ENTER
