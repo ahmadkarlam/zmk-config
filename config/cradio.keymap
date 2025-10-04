@@ -107,7 +107,7 @@
             bindings = <
         // ╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         // │ GUI+TAB │ GUI+SPC  │ GUI+{    │ GUI+}    │ Vol+     │   │ ←        │ ↓        │ ↑        │ →        │ Delete   │
-            &kp LG(LTAB) &kp LG(SPACE) &kp LG(LCBR) &kp LG(RCBR) &kp VOL_UP    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
+            &kp LG(TAB)  &kp LG(SPACE) &kp LG(LCBR) &kp LG(RCBR) &kp VOL_UP    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
         // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         // │ Shift   │ Alt      │ Ctrl     │ GUI      │ Vol-     │   │ Home     │ PgDn     │ PgUp     │ End      │ Enter    │
             &kp LSFT   &kp LALT     &kp LCTRL    &kp LGUI     &kp VOL_DOWN    &kp HOME   &kp PGDN   &kp PGUP   &kp END    &kp ENTER
