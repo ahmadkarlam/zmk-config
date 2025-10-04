@@ -105,21 +105,18 @@
         left_layer {
             display-name = "NAV";
             bindings = <
-            // ╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            // │ GUI+TAB │ GUI+SPC  │ GUI+{    │ GUI+}    │ Vol+     │   │ ←        │ ↓        │ ↑        │ →        │ Delete   │
-                &mt LGUI TAB   &mt LGUI SPACE   &mt LGUI LCBR   &mt LGUI RCBR   &kp VOL_UP
-                                                                       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
-            // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │ Shift   │ Alt      │ Ctrl     │ GUI      │ Vol-     │   │ Home     │ PgDn     │ PgUp     │ End      │ Enter    │
-                &kp LSFT   &kp LALT     &kp LCTRL    &kp LGUI     &kp VOL_DOWN
-                                                                       &kp HOME   &kp PGDN   &kp PGUP   &kp END    &kp ENTER
-            // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │ (unused)│ GUI+$    │ GUI+[    │ GUI+]    │ Play/Pause│  │ (unused) │ (unused) │ (unused) │ (unused) │ (unused) │
-                &trans     &mt LGUI DLLR   &mt LGUI LBKT   &mt LGUI RBKT   &kp C_PLAY_PAUSE
-                                                                       &trans &trans &trans &trans &trans
-            // ╰─────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                               &trans     &trans        &kp SPACE   &kp RSFT
-            //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        // ╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        // │ GUI+TAB │ GUI+SPC  │ GUI+{    │ GUI+}    │ Vol+     │   │ ←        │ ↓        │ ↑        │ →        │ Delete   │
+            &kp LG(LTAB) &kp LG(SPACE) &kp LG(LCBR) &kp LG(RCBR) &kp VOL_UP    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
+        // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        // │ Shift   │ Alt      │ Ctrl     │ GUI      │ Vol-     │   │ Home     │ PgDn     │ PgUp     │ End      │ Enter    │
+            &kp LSFT   &kp LALT     &kp LCTRL    &kp LGUI     &kp VOL_DOWN    &kp HOME   &kp PGDN   &kp PGUP   &kp END    &kp ENTER
+        // ├─────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        // │ (unused)│ GUI+$    │ GUI+[    │ GUI+]    │ Play/Pause│  │ (unused) │ (unused) │ (unused) │ (unused) │ (unused) │
+            &trans     &kp LG(DOLLAR) &kp LG(LBKT) &kp LG(RBKT) &kp C_PLAY_PAUSE &trans &trans &trans &trans &trans
+        // ╰─────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                           &trans     &trans        &kp SPACE   &kp RSFT
+        //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
