@@ -70,8 +70,8 @@
          combo_game_toggle {
             timeout-ms = <50>;
             key-positions = <8 9>;  // O + P positions
-            bindings = <&tog_game_hold game default_layer>;
-            layers = <default_layer game>;  // Active on base and game layers
+            bindings = <&tog_game_hold game 0>;
+            layers = <0 game>;  // Active on base and game layers
         };
     };
 
